@@ -60,7 +60,7 @@ FCmax = int(input("Digite a FC máxima: "))
 taxa = float(input("Digite a Taxa metabólica basal: "))
 # intensidade = float(input("Digite a intensidade "
 #                          "do treino aeróbio desejada: "))
-tempo = int(input("Digite o tempo de treino: "))
+tempo = int(input("Digite o tempo de Treino Funcional: "))
 vo2treino = ((vo2max - 3.5)*tabela[borg]["RFC"]) + 3.5
 MET = vo2treino/3.5
 #gpm gasto calorico por minuto
@@ -72,6 +72,6 @@ gasto = ingesta + 150
 aerobio = gasto - GCdia
 print(f"Kcal a gastar com treino aeróbio: {aerobio} kcal")
 # print(f"Vo2 treino: {vo2treino}   MET: {MET}  GPM:{gpm}")
-print(f"RFC = {(tabela[borg]['RFC'])*FCmax/100} bpm")
-print(f"Tempo de treino com intensidade {tabela[borg]['RFC']}% é de : {tempo} minutos")
+print(f"RFC = {(tabela[borg]['RFC'])*FCmax/1} bpm")
+print(f"Tempo de treino com intensidade {tabela[borg]['RFC']*100}% é de : {tempo} minutos")
 print(f"Gasto do Treino: {GCtreino}\nGasto Calórico do Dia {GCdia}")
